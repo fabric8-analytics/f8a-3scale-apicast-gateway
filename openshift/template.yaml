@@ -31,7 +31,7 @@ objects:
             valueFrom:
               secretKeyRef:
                 name: 3scale-apicast-gateway
-                key: threescale_portal_endpoint
+                key: password
           - name: THREESCALE_CONFIG_FILE
             value: "${CONFIGURATION_FILE_PATH}"
           - name: THREESCALE_DEPLOYMENT_ENV
