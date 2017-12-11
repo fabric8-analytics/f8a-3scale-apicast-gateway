@@ -179,4 +179,5 @@ parameters:
   required: true
   name: REPLICAS
   value: "2"
-- name: IMAGE_TAG
+- description: tag of image
+  name: IMAGE_TAG
