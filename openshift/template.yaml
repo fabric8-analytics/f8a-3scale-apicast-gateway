@@ -63,14 +63,14 @@ objects:
             httpGet:
               path: /status/live
               port: management
-            initialDelaySeconds: 10
-            timeoutSeconds: 1
+            initialDelaySeconds: 50
+            timeoutSeconds: 30
           readinessProbe:
             httpGet:
               path: /status/ready
               port: management
-            initialDelaySeconds: 15
-            timeoutSeconds: 1
+            initialDelaySeconds: 55
+            timeoutSeconds: 30
           ports:
           - name: proxy
             containerPort: 8080
