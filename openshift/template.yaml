@@ -129,7 +129,7 @@ parameters:
   name: CONFIGURATION_FILE_PATH
   required: false
 - description: "Deployment environment. Can be sandbox or production."
-  value: staging
+  value: production
   name: DEPLOYMENT_ENVIRONMENT
   required: true
 - description: "Name for the 3scale API Gateway"
@@ -141,7 +141,7 @@ parameters:
   name: RESOLVER
   required: false
 - description: "Subset of services to run. Use comma separated list of service ids (eg. 42,1337)"
-  value: "2555417754822,2555417754932"
+  value: 
   name: SERVICES_LIST
   required: false
 - name: CONFIGURATION_LOADER
