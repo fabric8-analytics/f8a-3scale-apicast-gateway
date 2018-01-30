@@ -91,7 +91,6 @@ objects:
     - type: ConfigChange
     replicas: ${{REPLICAS}}
     strategy:
-      resources: {}
       rollingParams:
         intervalSeconds: 1
         maxSurge: 0
