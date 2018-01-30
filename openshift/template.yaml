@@ -90,6 +90,14 @@ objects:
     triggers:
     - type: ConfigChange
     replicas: ${{REPLICAS}}
+    strategy:
+      rollingParams:
+        intervalSeconds: 1
+        maxSurge: 0
+        maxUnavailable: 25%
+        timeoutSeconds: 600
+        updatePeriodSeconds: 1
+      type: Rolling
 - apiVersion: v1
   kind: Service
   metadata:
@@ -178,6 +186,6 @@ parameters:
   displayName: Number of deployment replicas
   required: true
   name: REPLICAS
-  value: "2"
+  value: "3"
 - description: tag of image
   name: IMAGE_TAG
