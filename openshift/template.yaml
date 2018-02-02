@@ -159,6 +159,7 @@ parameters:
 - description: "Log level. One of the following: debug, info, notice, warn, error, crit, alert, or emerg."
   name: LOG_LEVEL
   required: false
+  value: "warn"
 - description: "Enable path routing. Experimental feature."
   name: PATH_ROUTING
   required: false
