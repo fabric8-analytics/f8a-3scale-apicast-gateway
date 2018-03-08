@@ -187,6 +187,6 @@ parameters:
   displayName: Number of deployment replicas
   required: true
   name: REPLICAS
-  value: "3"
+  value: "0"
 - description: tag of image
   name: IMAGE_TAG
